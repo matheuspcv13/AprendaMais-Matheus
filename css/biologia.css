@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+}
+.cabecalho {
+  width: 100%;
+  height: 100px;
+  background-color: #44a1a0;
+  border-bottom: 5px solid #2B4141;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cabecalho img {
+  width: auto;
+  height: auto;
+}
+
+#logo {
+  flex-grow: 1;
+}
+
+#centro {
+  flex-grow: 2;
+}
+
+.header {
+  width: 650px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #44a1a0;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.linha {
+  width: 60%;
+  height: 2px;
+  background-color: #44a1a0;
+}
+
+#container {
+  width: 891px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 300px 500px;
+  grid-auto-rows: 100px;
+}
+
+#titulo {
+  width: 300px;
+  height: 50px;
+  border: 3px solid #44a1a0;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#cadastrar {
+  width: 500px;
+  height: 58px;
+  border: 3px solid #44a1a0;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #555555;
+  padding: 5px;
+}
+
+#anotacao {
+  width: 851px;
+  height: 100px;
+  border: 3px solid #44a1a0;
+  border-radius: 7px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 831px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+button {
+  background-color: #44a1a0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+}
+
+input:focus {
+  animation: inputAnimation 0.3s ease-in-out;
+}
+
+button:hover {
+  animation: buttonAnimation 0.3s ease-in-out;
+}
+
+@keyframes inputAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.invisivel {
+  display: none;
+}
+
+.visivel {
+  display: static;
+}
+
+
+#cont-anota {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.anotacoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.anotacao {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.anotacao p {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.urgente {
+  background-color: red;
+}
+
+.importante {
+  background-color: yellow;
+}
+
+.normal {
+  background-color: green;
+}
+
+.mudar-cor {
+  color: blue;
+}
+
+.rodape{
+  width: 100%;
+  height: 100px;
+  background-color: #44a1a0;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: 'Roboto', san-serif;
+}
+
+.logo,
+.texto{
+  flex-grow: 1;
+}
+
+.centro{
+  flex-grow: 2;
+}
+
+.texto p{
+  margin-top: 60px;
+  margin-left: 200px; 
+  font-size: 20px;
+}

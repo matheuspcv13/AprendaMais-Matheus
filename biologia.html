@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/biologia.css">
+    <script src="js/biologia.js"></script>
+    <title>Anotacoes biologia</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div id="logo"><img src="img/logo.png"></div>
+            <div id="centro"></div>
+            <div id="pesquisa"><img src="img/pesquisa.png"></div>
+        </div>
+        <div class="header">
+            <span class="titulo">Anotacoes Biologia</span>
+            <span class="linha"></span>
+        </div>
+    </header>
+    <footer>
+        <div id="container" class="visivel">
+            <input type="text" placeholder="Título" id="titulo">
+            <select id="cadastrar">
+                <option value="">Selecione a categoria da Anotação</option>
+                <option value="urgente">Urgentes</option>
+                <option value="importante">Importantes</option>
+                <option value="normal">Normais</option>
+            </select>
+            <input type="text" placeholder="Texto da anotação" id="anotacao">
+        </div>
+        <div class="btn">
+            <button onclick="cadastrar()">CADASTRAR NOVA</button>
+        </div>
+    </footer>
+        <div id="cont-anota" class="invisivel">
+            <div id="anotacoes-container" class="anotacoes-container"></div>
+        </div>
+
+    <main>
+		<div class="rodape">
+			<div class="logo"><img src="img/logo.png"></div>
+			<div class="centro"></div>
+			<div class="texto"><p>Desenvolvido por Matheus Pires</p></div>
+		</div>
+	</main>
+</body>
+</html>

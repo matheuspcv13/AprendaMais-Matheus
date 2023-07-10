@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/historia.css">
+	<script src="js/historia.js"></script>
+	<title>História</title>
+</head>
+<body>
+	<header>
+		<div class="cabecalho">
+			<div id="logo"><img src="img/logo.png"></div>
+			<div id="centro"></div>
+			<meta charset="utf-8">
+			<div id="pesquisa"><img src="img/pesquisa.png"></div>
+		</div>	
+		<div class="header">	
+			<span class="titulo">Quiz de História</span>
+			<span class="linha"></span>
+		</div>	
+		<div class="tela">
+			<input type="text" placeholder="Digite seu nome aqui">
+		</div>
+	</header>
+	<footer>
+	<div class="container">
+		<div class="coluna-1">
+			<p>Pergunta 1: Em que ano o Brasil foi descoberto pelos portugueses?</p>
+			<label><input type="radio" value="1" name="questao-1"> a) 1492</label>
+			<label><input type="radio" value="2" name="questao-1"> b) 1500</label>
+			<label><input type="radio" value="3" name="questao-1"> c) 1520</label>
+			<label><input type="radio" value="4" name="questao-1"> d) 1550</label>
+
+			<p>Pergunta 3: Quem foi o primeiro presidente do Brasil?</p>
+			<label><input type="radio" value="1" name="questao-3"> a) Dom Pedro II</label>
+			<label><input type="radio" value="2" name="questao-3"> b) Getúlio Vargas</label>
+			<label><input type="radio" value="3" name="questao-3"> c) Juscelino Kubitschek</label>
+			<label><input type="radio" value="4" name="questao-3"> d) Marechal Deodoro da Fonseca</label>
+
+			<p>Pergunta 5: Qual foi o período em que o Brasil foi governado por Dom Pedro II?</p>
+			<label><input type="radio" value="1" name="questao-5"> a) Monarquia Constitucional</label>
+			<label><input type="radio" value="2" name="questao-5"> b) Ditadura Militar</label>
+			<label><input type="radio" value="3" name="questao-5"> c) República Velha</label>
+			<label><input type="radio" value="4" name="questao-5"> d) Regência</label>
+
+			<p>Pergunta 7: Qual foi o nome da primeira capital do Brasil?</p>
+			<label><input type="radio" value="1" name="questao-7"> a) Salvador</label>
+			<label><input type="radio" value="2" name="questao-7"> b) Rio de Janeiro</label>
+			<label><input type="radio" value="3" name="questao-7"> c) São Paulo</label>
+			<label><input type="radio" value="4" name="questao-7"> d) Brasília</label>
+
+			<p>Pergunta 9: Em que ano ocorreu a Proclamação da República no Brasil?</p>
+			<label><input type="radio" value="1" name="questao-9"> a) 1808</label>
+			<label><input type="radio" value="2" name="questao-9"> b) 1822</label>
+			<label><input type="radio" value="3" name="questao-9"> c) 1889</label>
+			<label><input type="radio" value="4" name="questao-9"> d) 1964</label>
+		</div>
+
+		<div class="coluna-2">
+			<p>Pergunta 2: Quem liderou o movimento de independência do Brasil?</p>
+			<label><input type="radio" value="1" name="questao-2"> a) Tiradentes</label>
+			<label><input type="radio" value="2" name="questao-2"> b) Dom Pedro I</label>
+			<label><input type="radio" value="3" name="questao-2"> c) Dom Pedro II</label>
+			<label><input type="radio" value="4" name="questao-2"> d) Getúlio Vargas</label>
+			
+			<p>Pergunta 4: Qual foi o último imperador do Brasil?</p>
+			<label><input type="radio" value="1" name="questao-4"> a) Dom Pedro I</label>
+			<label><input type="radio" value="2" name="questao-4"> b) Dom Pedro II</label>
+			<label><input type="radio" value="3" name="questao-4"> c) Dom João VI</label>
+			<label><input type="radio" value="4" name="questao-4"> d) Dom Manuel II</label>
+
+			<p>Pergunta 6: Quem foi o presidente do Brasil durante a Segunda Guerra Mundial?</p>
+			<label><input type="radio" value="1" name="questao-6"> a) Getúlio Vargas</label>
+			<label><input type="radio" value="2" name="questao-6"> b) Juscelino Kubitschek</label>
+			<label><input type="radio" value="3" name="questao-6"> c) Fernando Henrique Cardoso</label>
+			<label><input type="radio" value="4" name="questao-6"> d) Luiz Inácio Lula da Silva</label>
+
+			<p>Pergunta 8: Qual foi o movimento que resultou na renúncia do presidente Jânio Quadros em 1961?</p>
+			<label><input type="radio" value="1" name="questao-8"> a) Revolução de 1930</label>
+			<label><input type="radio" value="2" name="questao-8"> b) Golpe Militar de 1964</label>
+			<label><input type="radio" value="3" name="questao-8"> c) Movimento das Diretas Já</label>
+			<label><input type="radio" value="4" name="questao-8"> d) Campanha "O petróleo é nosso</label>
+
+			<p>Pergunta 10: Quem foi a primeira mulher presidente do Brasil?</p>
+			<label><input type="radio" value="1" name="questao-10"> a) Dilma Rousseff</label>
+			<label><input type="radio" value="2" name="questao-10"> b) Marina Silva</label>
+			<label><input type="radio" value="3" name="questao-10"> c) Ana Maria Braga</label>
+			<label><input type="radio" value="4" name="questao-10"> d) Maria Bonita</label>
+		</div>
+    </div>
+    <div class="botao">
+    	<button onclick="resposta()">ENVIAR RESPOSTA</button>
+    </div>
+    <div class="resultado">
+    	<p id="result"></p>
+    </div>
+	</footer>
+
+	<main>
+		<div class="rodape">
+			<div class="logo"><img src="img/logo.png"></div>
+			<div class="centro"></div>
+			<div class="texto"><p>Desenvolvido por Matheus Pires</p></div>
+		</div>
+	</main>
+</body>
+</html>
